@@ -1,6 +1,6 @@
 import { Column, Entity } from "typeorm";
 
-@Entity({ name: 'useraccounts', synchronize: true }) // tbl name is useraccounts
+@Entity({ name: 'useraccounts', synchronize: true }) // tbl name is useraccounts; synchronize true to auto-create table if not exists =]
 export class UserAccount {
 
     @Column({ type: 'uuid', name: 'partitionid', primary: true })
